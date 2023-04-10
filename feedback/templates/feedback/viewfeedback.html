@@ -1,0 +1,31 @@
+{% extends 'temp/admin.html' %}
+{% block base %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>view feed</title>
+</head>
+<body style="background-color: #FAD5A5">
+	<center>
+		<h1>VIEW FEEDBACK</h1>
+		<table border="2">
+			<tr>
+				<th>Feedback</th>
+                <th>Date</th>
+                <th>Time</th>
+			</tr>
+            {% for i in bb %}
+			<tr>
+				<td>{{ i.feedback }}</td>
+                <td>{{ i.date }}</td>
+                <td>{{ i.time }}</td>
+			</tr>
+			{% endfor %}
+
+		</table>
+
+	</center>
+
+</body>
+</html>
+{% endblock %}

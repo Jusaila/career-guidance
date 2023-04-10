@@ -1,0 +1,41 @@
+{% extends 'temp/admin.html' %}
+{% block base %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>view course</title>
+</head>
+<body>
+	<center>
+		<h1>VIEW UPDATED COLLEGE</h1>
+    <form method="post">
+    {% csrf_token %}
+{#     <input type="text" name="name" placeholder="Search Course Here">#}
+{#     <input type="submit" name="submit">#}
+<div style="padding: 10px"></div>
+		<table border="2">
+			<tr>
+				<th>College</th>
+{#                <th>Location</th>#}
+{#                <th>Contact</th>#}
+				<th>Course</th>
+				<th>Course details</th>
+			</tr>
+            {% for i in a %}
+
+			<tr>
+                <td>{{ i.c.college_name}}</td>
+				<td>{{ i.course }}</td>
+				<td>{{ i.course_details }}</td>
+                <td><a href="{% url 'update' idd=i.course_id %}">UPDATE</a></td>
+            </tr>
+
+            {% endfor %}
+
+		</table>
+    </form>
+	</center>
+
+</body>
+</html>
+{% endblock %}

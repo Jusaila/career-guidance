@@ -1,0 +1,698 @@
+{% extends 'temp/student.html' %}
+{% block base %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test-post</title>
+</head>
+<body style="background-color: #FAD5A5">
+
+	<h1 align="center">Career Assesment Test</h1>
+
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+
+	<form method="post">
+         {% csrf_token %}
+		<table align="center">
+			<tr>
+				<td>1.Are you interested in <b>Teaching</b> ?</td>
+            </tr>
+				<tr><td><input type="radio" name="q1" value="1" required="">
+				<label>Yes</label></td>
+			    <tr><td><input type="radio" name="q1" value="0" required="">
+			    <label>No</label></td></tr>
+			
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr>    
+			<tr>
+                <td>2.Are you interest in <b>Coding</b> ?</td>
+			</tr>
+				<tr><td><input type="radio" name="q2" value="1" required="">
+				<label>Yes</label></td>
+				<tr><td><input type="radio" name="q2" value="0" required="">
+				<label>No</label></td></tr>
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+                <td>3.Are you intersted in <b>Electrical Components</b> ?</td>
+			</tr>
+			    <tr><td><input type="radio" name="q3" value="1" required="">
+			    <label>Yes</label></td>
+			    <tr><td><input type="radio" name="q3" value="0" required="">
+			    <label>No</label></td></tr>
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+                <td>4.Are you intersted in <b>Mechanic Parts</b> ?</td>
+			</tr>
+			    <tr><td><input type="radio" name="q4" value="1" required="">
+			    <label>Yes</label></td>
+			    <tr><td><input type="radio" name="q4" value="0" required="">
+			    <label>No</label></td></tr>
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+                <td>5.Are you interested in <b>Computer Pars</b> ?</td>
+			</tr>
+			    <tr><td><input type="radio" name="q5" value="1" required="">
+			    <label>Yes</label></td>
+			    <tr><td><input type="radio" name="q5" value="0" required="">
+			    <label>No</label></td></tr>
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+                <td>6.Are you intersted in <b>Researching</b> ?</td>
+			</tr>
+			    <tr><td><input type="radio" name="q6" value="1" required="">
+			    <label>Yes</label></td>
+			    <tr><td><input type="radio" name="q6" value="0" required="">
+			    <label>No</label></td></tr>
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+                <td>7.Are you intersted in <b>Architecture</b> ?</td>
+			</tr>
+			    <tr><td><input type="radio" name="q7" value="1" required="">
+			    <label>Yes</label></td>
+			    <tr><td><input type="radio" name="q7" value="0" required="">
+			    <label>No</label></td></tr>
+			    <tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+                <td>8.Are you intersted in <b>Botony</b> ?</td>
+			</tr>
+			    <tr><td><input type="radio" name="q8" value="1" required="">
+			    <label>Yes</label></td>
+			    <tr><td><input type="radio" name="q8" value="0" required="">
+			    <label>No</label></td></tr>
+			    <tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td>9.Are you intersted in <b>Zology</b> ?</td>
+			</tr>
+			    <tr><td><input type="radio" name="q9" value="1" required="">
+			    <label>Yes</label></td>
+			    <tr><td><input type="radio" name="q9" value="0" required="">
+			    <label>No</label></td></tr>
+			    <tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+                <td>10.Are you intersted in <b>Physics</b> ?</td>
+			</tr>
+			    <tr><td><input type="radio" name="q10" value="1" required="">
+			    <label>Yes</label></td>
+			    <tr><td><input type="radio" name="q10" value="0" required="">
+			    <label>No</label></td></tr>
+			    <tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+                <td>11.Are you intersted in <b>Accounting</b> ?</td>
+			</tr>
+			    <tr><td><input type="radio" name="q11" value="1" required="">
+			    <label>Yes</label></td>
+			    <tr><td><input type="radio" name="q11" value="0" required="">
+			    <label>No</label></td></tr>
+			    <tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td>12.Are you intersted in <b>Economics</b> ?</td>
+			</tr>
+			    <tr><td><input type="radio" name="q12" value="1" required="">
+			    <label>Yes</label></td>
+			    <tr><td><input type="radio" name="q12" value="0" required="">
+			    <label>No</label></td></tr>
+			    <tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+                <td>13.Are you intersted in <b>Sociology</b> ?</td>
+			</tr>
+			    <tr><td><input type="radio" name="q13" value="1" required="">
+			    <label>Yes</label></td>
+			    <tr><td><input type="radio" name="q13" value="0" required="">
+			    <label>No</label></td></tr>
+			    <tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+                <td>14.Are you intersted in <b>Geography</b> ?</td>
+			</tr>
+			    <tr><td><input type="radio" name="q14" value="1" required="">
+			    <label>Yes</label></td>
+			    <tr><td><input type="radio" name="q14" value="0" required="">
+			    <label>No</label></td></tr>
+			    <tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+                <td>15.Are you intersted in <b>psychology</b> ?</td>
+			</tr>
+			    <tr><td><input type="radio" name="q15" value="1" required="">
+			    <label>Yes</label></td>
+			    <tr><td><input type="radio" name="q15" value="0" required="">
+			    <label>No</label></td></tr>
+			    <tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+                <td>16.Are you intersted in <b>History</b> ?</td>
+			</tr>
+			    <tr><td><input type="radio" name="q16" value="1" required="">
+			    <label>Yes</label></td>
+			    <tr><td><input type="radio" name="q16" value="0" required="">
+			    <label>No</label></td></tr>
+			    <tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+                <td>17.Are you intersted in <b>Science</b> ?</td>
+			</tr>
+			    <tr><td><input type="radio" name="q17" value="1" required="">
+			    <label>Yes</label></td>
+			    <tr><td><input type="radio" name="q17" value="0" required="">
+			    <label>No</label></td></tr>
+			    <tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+                <td>18.Are you intersted in <b>Business education</b> ?</td>
+			</tr>
+			    <tr><td><input type="radio" name="q18" value="1" required="">
+			    <label>Yes</label></td>
+			    <tr><td><input type="radio" name="q18" value="0" required="">
+			    <label>No</label></td></tr>
+			    <tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td>19.Are you intersted in <b>Chemistry</b> ?</td>
+			</tr>
+			    <tr><td><input type="radio" name="q19" value="1" required="">
+			    <label>Yes</label></td>
+			    <tr><td><input type="radio" name="q19" value="0" required="">
+			    <label>No</label></td></tr>
+			    <tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+                <td>20.Are you intersted <b>Mathematics</b> ?</td>
+			</tr>
+			    <tr><td><input type="radio" name="q20" value="1" required="">
+			    <label>Yes</label></td>
+			    <tr><td><input type="radio" name="q20" value="0" required="">
+			    <label>No</label></td></tr>
+			    <tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+                <td>21.Are you intersted in <b>Biology</b> ?</td>
+			</tr>
+			    <tr><td><input type="radio" name="q21" value="1" required="">
+			    <label>Yes</label></td>
+			    <tr><td><input type="radio" name="q21" value="0" required="" >
+			    <label>No</label></td></tr>
+			    <tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+                <td>22.Are you intersted in <b>makeup</b> ?</td>
+			</tr>
+			    <tr><td><input type="radio" name="q22" value="1" required="">
+			    <label>Yes</label></td>
+			    <tr><td><input type="radio" name="q22" value="0" required="">
+			    <label>No</label></td></tr>
+			    <tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td>23.Are you intersted in <b>Designing</b> ?</td>
+			</tr>
+			    <tr><td><input type="radio" name="q23" value="1" required="">
+			    <label>Yes</label></td>
+			    <tr><td><input type="radio" name="q23" value="0" required="">
+			    <label>No</label></td></tr>
+			    <tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+                <td>24.Are you intersted in <b>Content writing</b> ?</td>
+			</tr>
+			    <tr><td><input type="radio" name="q24" value="1" required="">
+			    <label>Yes</label></td>
+			    <tr><td><input type="radio" name="q24" value="0" required="">
+			    <label>No</label></td></tr>
+			    <tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+                <td>25.Are you intersted in <b>Literature</b> ?</td>
+			</tr>
+			    <tr><td><input type="radio" name="q25" value="1" required="">
+			    <label>Yes</label></td>
+			    <tr><td><input type="radio" name="q25" value="0" required="">
+			    <label>No</label></td></tr>
+			    <tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td>26.Are you intersted in <b>Reading</b>?</td>
+			</tr>
+			    <tr><td><input type="radio" name="q26" value="1" required="">
+			    <label>Yes</label></td>
+			    <tr><td><input type="radio" name="q26" value="0" required="">
+			    <label>No</label></td></tr>
+			    <tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+                <td>27.Are you intersted in <b>Cartooning</b> ?</td>
+			</tr>
+			    <tr><td><input type="radio" name="q27" value="1" required="">
+			    <label>Yes</label></td>
+			    <tr><td><input type="radio" name="q27" value="0" required="">
+			    <label>No</label></td></tr>
+			    <tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+                <td>28.Are you intersted in <b>Debating</b> ?</td>
+			</tr>
+			    <tr><td><input type="radio" name="q28" value="1" required="">
+			    <label>Yes</label></td>
+			    <tr><td><input type="radio" name="q28" value="0" required="">
+			    <label>No</label></td></tr>
+			    <tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td>29.Are you intersted in <b>Astrology</b> ?</td>
+			</tr>
+			    <tr><td><input type="radio" name="q29" value="1" required="">
+			    <label>Yes</label></td>
+			    <tr><td><input type="radio" name="q29" value="0" required="">
+			    <label>No</label></td></tr>
+			    <tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td>30.Are you intersted in <b>Hindi Lanquage</b> ?</td>
+			</tr>
+			    <tr><td><input type="radio" name="q30" value="1" required="">
+			    <label>Yes</label></td>
+			    <tr><td><input type="radio" name="q30" value="0" required="">
+			    <label>No</label></td></tr>
+			      <tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+                <td>31.Are you intersted in <b>English Lanquage</b> ?</td>
+			</tr>
+			    <tr><td><input type="radio" name="q31" value="1" required="">
+			    <label>Yes</label></td>
+			    <tr><td><input type="radio" name="q31" value="0" required="">
+			    <label>No</label></td></tr>
+			      <tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+                <td>32.Are you intersted in <b>Urdu Lanquage </b> ?</td>
+			</tr>
+			    <tr><td><input type="radio" name="q32" value="1" required="">
+                    <label>Yes</label></td></tr>
+			    <tr><td><input type="radio" name="q32" value="0" required="">
+			    <label>No</label></td></tr>
+			      <tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td>33.Are you intersted in <b>Solving Puzzles</b> ?</td>
+                <tr><td><input type="radio" name="q33" value="1" required="">
+            <label>Yes</label></td></tr>
+			    <tr><td><input type="radio" name="q33" value="0" required="">
+			    <label>No</label></td></tr>
+
+			</tr>
+
+			      <tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td>34.Are you intersted in <b>Yoga</b> ?</td>
+			</tr>
+			    <tr><td><input type="radio" name="q34" value="1" required="">
+                    <label>Yes</label></td></tr>
+			    <tr><td><input type="radio" name="q34" value="0" required="">
+			    <label>No</label></td></tr>
+			      <tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td>35.Are you intersted in <b>Engineering</b>?</td>
+			</tr>
+			    <tr><td><input type="radio" name="q35" value="1" required="">
+                    <label>Yes</label></td></tr>
+			    <tr><td><input type="radio" name="q35" value="0" required="">
+			    <label>No</label></td></tr>
+			      <tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td>36.Are you intersted in <b>Doctor</b> ?</td>
+			</tr>
+			    <tr><td><input type="radio" name="q36" value="1" required="" >
+                    <label>Yes</label></td></tr>
+			    <tr><td><input type="radio" name="q36" value="0" required="">
+			    <label>No</label></td></tr>
+			     <tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td>37.Are you intersted in <b>Pharmisist </b> ?</td>
+			</tr>
+			    <tr><td><input type="radio" name="q37" value="1" required="">
+                    <label>Yes</label></td></tr>
+			    <tr><td><input type="radio" name="q37" value="0" required="">
+			    <label>No</label></td></tr>
+			     <tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+                <td>38.Are you intersted in <b>Director</b> ?</td>
+			</tr>
+			    <tr><td><input type="radio" name="q38" value="1" required="">
+                    <label>Yes</label></td></tr>
+			    <tr><td><input type="radio" name="q38" value="0" required="">
+			    <label>No</label></td></tr>
+			     <tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+                <td>39.Are you intersted in <b>Journalism</b> ?</td>
+			</tr>
+			    <tr><td><input type="radio" name="q39" value="1" required="">
+                    <label>Yes</label></td></tr>
+			    <tr><td><input type="radio" name="q39" value="0" required="">
+			    <label>No</label></td></tr>
+			     <tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+                <td>40.Are you intersted in <b>Business</b> ?</td>
+			</tr>
+			    <tr><td><input type="radio" name="q40" value="1" required="">
+                    <label>Yes</label></td></tr>
+			    <tr><td><input type="radio" name="q40" value="0" required="">
+			    <label>No</label></td></tr>
+			     <tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+				<td></td>
+				<td></td>
+			</tr> 
+			<tr>
+                <td>41.Are you intersted in <b>Listening Music</b> ?</td>
+			</tr>
+			    <tr><td><input type="radio" name="q41" value="1" required="">
+                    <label>Yes</label></td></tr>
+			    <tr><td><input type="radio" name="q41" value="0" required="">
+			    <label>No</label></td></tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    	
+			    
+			
+			
+			<tr>
+				<center>
+					
+				</center>
+				<td align="center"><input type="submit" name="btn" value="submit"></td>
+			</tr>
+    </form>
+
+	</table>
+</body>
+</html>
+
+{% endblock %}

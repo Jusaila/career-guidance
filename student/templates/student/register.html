@@ -1,0 +1,44 @@
+{% extends 'temp/home.html' %}
+{% block base %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>register</title>
+</head>
+<body>
+	<h2 align="center">REGISTER STUDENT</h2>
+	<form method="post">
+        {% csrf_token %}
+       	<table align="center">
+            <tr>
+				<td>Username</td>
+				<td><input type="text" name="username" required></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type="password" name="password" required></td>
+			</tr>
+			<tr>
+				<td>Phone</td>
+				<td><input type="text" name="phone" minlength="10" maxlength="10" required></td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td><input type="text" name="email" required></td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td><input type="radio" name="gender" value="Male" checked>Male
+					<input type="radio" name="gender" value="Female">Female
+					<input type="radio" name="gender" value="Others">Others</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" name="btn" value="Register"></td>
+			</tr>
+
+</table>
+</form>
+</body>
+</html>
+{% endblock %}

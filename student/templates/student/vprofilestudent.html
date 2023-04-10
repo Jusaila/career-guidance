@@ -1,0 +1,33 @@
+{% extends 'temp/student.html' %}
+{% block base %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>view profile</title>
+</head>
+<body>
+	<center>
+	<h2>VIEW PROFILE</h2>
+       	<table align="center" border="2">
+            <tr>
+				<th>Username</th>
+				<th>Phone</th>
+				<th>Email</th>
+				<th>Gender</th>
+			</tr>
+			{% for i in kk %}
+
+			<tr>
+				<td>{{ i.username }}</td>
+				<td>{{ i.phone }}</td>
+				<td>{{ i.e_mail }}</td>
+				<td>{{ i.gender}}</td>
+			</tr>
+
+			{% endfor %}
+
+</table>
+    </center>
+</body>
+</html>
+{% endblock %}

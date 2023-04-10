@@ -1,0 +1,81 @@
+{% extends 'temp/student.html' %}
+{% block base %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>view course</title>
+</head>
+<style>
+
+    .styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+    .styled-table thead tr {
+    background-color: orange;
+    color: #ffffff;
+    text-align: left;
+}
+    .styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+    .styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+</style>
+<body>
+	<center>
+		<h1>VIEW COLLEGE AND COURSE</h1>
+    <form method="post">
+    {% csrf_token %}
+     <input type="text" name="name" placeholder="Search Course Here">
+     <input type="submit" name="submit">
+    </form>
+<div style="padding: 10px"></div>
+		<table border="2" class="styled-table">
+		<thead>
+			<tr>
+				<th>College</th>
+                <th>Location</th>
+                <th>Contact</th>
+				<th>Course</th>
+				<th>Course details</th>
+                <th>Website</th>
+
+			</tr>
+		</thead>
+            {% for i in a %}
+        <tbody>
+			<tr class="active-row">
+				<td>{{ i.c.college_name}}</td>
+                <td>{{ i.c.college_location }}</td>
+                <td>{{ i.c.phone }}</td>
+				<td>{{ i.course }}</td>
+				<td onclick="location.href='{{ i.course_details }}'">{{ i.course_details }}</td>
+                <td onclick="location.href='{{ i.c.website }}'">{{ i.c.website }}</td>
+			</tr>
+            </tbody>
+
+            {% endfor %}
+
+		</table>
+    </form>
+	</center>
+
+</body>
+</html>
+{% endblock %}
